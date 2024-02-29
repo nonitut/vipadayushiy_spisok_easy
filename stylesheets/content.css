@@ -1,0 +1,36 @@
+*{ box-sizing: border-box;}
+html, body{ height: 100%;}
+
+@font-face {
+font-family: "CarlaSansLight";
+src: url("../fonts/CarlaSansLight.ttf") format("truetype");
+font-style: Light;
+font-weight: Light;
+}
+
+p{ font-family: 'CarlaSansLight'; }
+
+ul{
+    display: flex;
+    gap: 80px;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.dropdown-content {
+    display: none; /* По умолчанию скрыто */
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+li:hover .dropdown-content {
+    display: block;
+}
+
+a{
+    padding: 10px 10px ;
+    display: block;
+}
